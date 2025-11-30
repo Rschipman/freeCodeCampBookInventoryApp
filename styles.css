@@ -1,0 +1,26 @@
+
+tr.read {
+  background-image: linear-gradient(to right, rgba(255,0,0,0.9), rgba(255,0,0,0.25));
+}
+
+tr.to-read {
+  background-image: linear-gradient(to right, rgba(255,255,0,0.9), rgba(255,255,0,0.25));
+}
+
+tr.in-progress {
+  background-image: linear-gradient(to right, rgba(0,255,0,0.9), rgba(0,255,0,0.25));
+}
+
+span {
+  display: inline-block;
+}
+
+/* Make table cells taller so the background is visible and ensure cells don't override row backgrounds */
+table {
+  border-collapse: collapse;
+}
+
+td, th {
+  background: transparent;
+  padding: 0.6rem;
+}
