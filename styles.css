@@ -1,4 +1,3 @@
-
 tr.read {
   background-image: linear-gradient(to right, rgba(255,0,0,0.9), rgba(255,0,0,0.25));
 }
@@ -15,12 +14,26 @@ span {
   display: inline-block;
 }
 
-/* Make table cells taller so the background is visible and ensure cells don't override row backgrounds */
-table {
-  border-collapse: collapse;
-}
+tr[class~="to-read"] span[class~="status"] {
+  border: 1px solid black;
+   padding: 0.2rem 0.45rem;
+  border-radius: 0.25rem;
+  background-image: radial-gradient(white, transparent 90%);}
 
-td, th {
-  background: transparent;
-  padding: 0.6rem;
+tr[class~="read"] span[class~="status"] {
+  border: 1px solid black;
+   padding: 0.2rem 0.45rem;
+  border-radius: 0.25rem;
+  background-image: radial-gradient(white, transparent 90%);}
+
+tr[class~="in-progress"] span[class~="status"] {
+  border: 1px solid black;
+   padding: 0.2rem 0.45rem;
+  border-radius: 0.25rem;
+  background-image: radial-gradient(white, transparent 90%);}
+
+span[class~="rate"], span[class~="rate"] {
+  height: 20px;
+  width: 100px;
+  padding: 5px;
 }
